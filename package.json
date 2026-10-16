@@ -1,0 +1,9 @@
+{
+  "name": "recipe-collector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A personal cookbook: web clipper, categories, drag & drop, photo import.",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "fflate": "^0.8.2" }
+}

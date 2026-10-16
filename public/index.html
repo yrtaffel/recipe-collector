@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Cookbook</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <aside id="sidebar">
+    <h1>🍳 My Cookbook</h1>
+    <nav id="cats"></nav>
+    <button id="addCat" class="ghost">+ New category</button>
+  </aside>
+
+  <main>
+    <header>
+      <input id="search" type="search" placeholder="Search recipes…">
+      <button id="newRecipe" class="primary">+ New recipe</button>
+      <button id="openImport">Import photos</button>
+    </header>
+    <div id="heading"></div>
+    <section id="grid"></section>
+  </main>
+
+  <dialog id="viewer"></dialog>
+
+  <dialog id="importer">
+    <h2>Import photos</h2>
+    <p class="hint">Drop images, a folder, or a Google Takeout <b>.zip</b> here. Each photo becomes a recipe card
+      you can sort later. A Takeout album (folder) name is saved as the cookbook name.</p>
+    <div id="drop">Drop files here or <label class="link">choose files<input id="files" type="file" multiple accept="image/*,.zip" hidden></label>
+      or <label class="link">choose a folder<input id="folder" type="file" webkitdirectory hidden></label></div>
+    <label>Put them in
+      <select id="importCat"></select>
+    </label>
+    <label>Cookbook name (if not from album folders)
+      <input id="importSource" placeholder="e.g. Marble Spoon">
+    </label>
+    <progress id="progress" value="0" max="1" hidden></progress>
+    <div id="importLog" class="hint"></div>
+    <div class="row"><button id="closeImport">Close</button></div>
+  </dialog>
+
+  <script src="/vendor/fflate.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

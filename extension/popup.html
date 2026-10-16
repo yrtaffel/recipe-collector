@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  body { width: 320px; font: 14px system-ui, sans-serif; margin: 12px; }
+  label { display: block; margin: 8px 0 2px; color: #666; font-size: 12px; }
+  input, select { width: 100%; padding: 6px; box-sizing: border-box; font: inherit; }
+  button { width: 100%; margin-top: 8px; padding: 8px; font: inherit; cursor: pointer; border: 1px solid #ccc; border-radius: 6px; background: #fff; }
+  button.primary { background: #c2562d; color: #fff; border-color: #c2562d; }
+  #msg { margin-top: 8px; min-height: 18px; font-size: 13px; }
+  .err { color: #b00020; } .ok { color: #1b7a34; }
+</style>
+<b>🍳 Clip to My Cookbook</b>
+<label>Title</label><input id="title">
+<label>Category</label><select id="cat"></select>
+<button id="sel" class="primary">Clip my selection</button>
+<button id="smart">Auto-detect recipe on page</button>
+<button id="page">Clip whole page</button>
+<div id="msg"></div>
+<script src="popup.js"></script>

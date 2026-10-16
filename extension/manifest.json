@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Cookbook Clipper",
+  "version": "0.1.0",
+  "description": "Clip recipes from any web page into your Recipe Collector.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://localhost:3000/*", "http://127.0.0.1:3000/*", "https://*/*", "http://*/*"],
+  "action": { "default_popup": "popup.html", "default_title": "Clip this recipe" }
+}
